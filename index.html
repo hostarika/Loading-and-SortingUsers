@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="container">
+            <div class="btn-up">
+                <button class="button-57" role="button" id="get-users"><span class="text">Get Users</span><span>
+                <button class="button-57" role="button" id="reload"><span
+                        class="text">Reload</span></button>
+            </div>
+            <div class="inp-box">
+                <input type="text" placeholder="Seadch ..." id="search">
+                <select id="age">
+                    <option value="All">All</option>
+                    <option value="15-25">15-25</option>
+                    <option value="25-40">25-40</option>
+                    <option value="40-60">40-60</option>
+                    <option value="60">60 +</option>
+                </select>
+                <select id="sort">
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                </select>
+            </div>
+            <div id="user-box">
+                <div class="loader" id="loader"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

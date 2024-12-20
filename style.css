@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.bgimg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background-color: bisque;  
+    /* background-color: rgba(149, 149, 149, 0.468); */
+    /* overflow: hidden; */
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin: 10px auto;
+    width: 50px;
+    --b: 8px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%,#f03355) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation:l4 1s infinite steps(10);
+  }
+  @keyframes l4 {to{transform: rotate(1turn)}}
+.button-57 {
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid #18181a; */
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: aqua;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+.btn-up {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 20px;
+    width: 1000px;
+}
+select{
+    background-color: aqua;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.734)  ;
+}
+.inp-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 35px 0;
+}
+
+input{
+    width: 380px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(104, 104, 104, 0.164);
+    background-color: aqua;
+    color: white;
+}
+
+.card{
+    width: 330px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: darkblue;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: balance;
+
+}
+.person{
+    width: 100px;
+
+    border-radius: 50%;
+}
+
+#user-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+}
